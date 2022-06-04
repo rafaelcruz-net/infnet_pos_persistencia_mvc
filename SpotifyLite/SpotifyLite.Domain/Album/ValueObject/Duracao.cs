@@ -15,7 +15,7 @@ namespace SpotifyLite.Domain.Album.ValueObject
 
         public Duracao(int valor)
         {
-
+            this.Valor = valor;
         }
 
         public int Valor { get; set; }
