@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpotifyLite.Domain", "Spoti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpotifyLite.CrossCutting", "SpotifyLite.CrossCutting\SpotifyLite.CrossCutting.csproj", "{053A1EA4-C09E-4E6A-B4CB-6684F639EBA9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpotifyLite.Repository", "SpotifyLite.Repository\SpotifyLite.Repository.csproj", "{2DF81E7B-B15D-4823-AB9D-3B7F40B47DEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpotifyLite.Api", "SpotifyLite.Api\SpotifyLite.Api.csproj", "{D65E6985-A681-47AF-815F-8E2CE83D6E17}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{053A1EA4-C09E-4E6A-B4CB-6684F639EBA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{053A1EA4-C09E-4E6A-B4CB-6684F639EBA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{053A1EA4-C09E-4E6A-B4CB-6684F639EBA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DF81E7B-B15D-4823-AB9D-3B7F40B47DEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DF81E7B-B15D-4823-AB9D-3B7F40B47DEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DF81E7B-B15D-4823-AB9D-3B7F40B47DEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DF81E7B-B15D-4823-AB9D-3B7F40B47DEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D65E6985-A681-47AF-815F-8E2CE83D6E17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D65E6985-A681-47AF-815F-8E2CE83D6E17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D65E6985-A681-47AF-815F-8E2CE83D6E17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D65E6985-A681-47AF-815F-8E2CE83D6E17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

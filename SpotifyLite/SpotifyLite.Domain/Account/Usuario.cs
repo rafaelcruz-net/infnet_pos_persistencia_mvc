@@ -1,4 +1,5 @@
 ﻿using FluentValidation;
+using SpotifyLite.CrossCutting.Entity;
 using SpotifyLite.CrossCutting.Utils;
 using SpotifyLite.Domain.Account.Rules;
 using SpotifyLite.Domain.Account.ValueObject;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace SpotifyLite.Domain.Account
 {
-    public class Usuario
+    public class Usuario : Entity<Guid>
     {
         public string Nome { get; set; }
         public Email Email { get; set; }
