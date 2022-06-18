@@ -1,4 +1,5 @@
 ﻿using SpotifyLite.CrossCutting.Entity;
+using SpotifyLite.Domain.Account;
 using SpotifyLite.Domain.Album.ValueObject;
 using System;
 using System.Collections.Generic;
@@ -12,5 +13,7 @@ namespace SpotifyLite.Domain.Album
     {
         public string Nome { get; set; }
         public Duracao Duracao { get; set; }
+
+        public IList<Playlist> Playlists { get; set; }
     }
 }
