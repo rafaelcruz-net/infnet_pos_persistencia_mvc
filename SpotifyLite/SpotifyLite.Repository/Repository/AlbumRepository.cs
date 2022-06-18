@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace SpotifyLite.Repository.Repository
 {
-    public class AbumRepository : Repository<Album>, IAlbumRepository
+    public class AlbumRepository : Repository<Album>, IAlbumRepository
     {
-        public AbumRepository(SpotifyContext context) : base(context)
+        public AlbumRepository(SpotifyContext context) : base(context)
         {
             
         }
