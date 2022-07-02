@@ -5,11 +5,13 @@ VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpotifyLite.Domain", "SpotifyLite.Domain\SpotifyLite.Domain.csproj", "{87A00EBB-10D6-4093-B8F9-968546F3C63E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpotifyLite.CrossCutting", "SpotifyLite.CrossCutting\SpotifyLite.CrossCutting.csproj", "{053A1EA4-C09E-4E6A-B4CB-6684F639EBA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpotifyLite.CrossCutting", "SpotifyLite.CrossCutting\SpotifyLite.CrossCutting.csproj", "{053A1EA4-C09E-4E6A-B4CB-6684F639EBA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpotifyLite.Repository", "SpotifyLite.Repository\SpotifyLite.Repository.csproj", "{2DF81E7B-B15D-4823-AB9D-3B7F40B47DEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpotifyLite.Repository", "SpotifyLite.Repository\SpotifyLite.Repository.csproj", "{2DF81E7B-B15D-4823-AB9D-3B7F40B47DEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpotifyLite.Api", "SpotifyLite.Api\SpotifyLite.Api.csproj", "{D65E6985-A681-47AF-815F-8E2CE83D6E17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpotifyLite.Api", "SpotifyLite.Api\SpotifyLite.Api.csproj", "{D65E6985-A681-47AF-815F-8E2CE83D6E17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpofityLite.Application", "SpofityLite.Application\SpofityLite.Application.csproj", "{1DAEAF09-543F-4E36-A6C5-C9FDFF6E29E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{D65E6985-A681-47AF-815F-8E2CE83D6E17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D65E6985-A681-47AF-815F-8E2CE83D6E17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D65E6985-A681-47AF-815F-8E2CE83D6E17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DAEAF09-543F-4E36-A6C5-C9FDFF6E29E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DAEAF09-543F-4E36-A6C5-C9FDFF6E29E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DAEAF09-543F-4E36-A6C5-C9FDFF6E29E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DAEAF09-543F-4E36-A6C5-C9FDFF6E29E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

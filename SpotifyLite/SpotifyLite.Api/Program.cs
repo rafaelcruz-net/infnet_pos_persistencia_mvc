@@ -1,6 +1,7 @@
 using SpotifyLite.Repository.Context;
 using Microsoft.EntityFrameworkCore;
 using SpotifyLite.Repository;
+using SpofityLite.Application;
 
 namespace SpotifyLite.Api
 {
@@ -15,8 +16,8 @@ namespace SpotifyLite.Api
             builder.Services.AddControllers();
 
             builder.Services
+                   .RegisterApplication()
                    .RegisterRepository(builder.Configuration.GetConnectionString("SpotifyLite"));
-
             
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
