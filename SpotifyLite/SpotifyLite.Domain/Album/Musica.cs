@@ -14,6 +14,6 @@ namespace SpotifyLite.Domain.Album
         public string Nome { get; set; }
         public Duracao Duracao { get; set; }
 
-        public IList<Playlist> Playlists { get; set; }
+        public virtual IList<Playlist> Playlists { get; set; }
     }
 }

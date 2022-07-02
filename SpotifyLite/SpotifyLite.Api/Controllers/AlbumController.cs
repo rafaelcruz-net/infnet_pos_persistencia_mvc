@@ -1,5 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using MediatR;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using SpofityLite.Application.Album.Dto;
+using SpofityLite.Application.Album.Handler.Command;
+using SpofityLite.Application.Album.Handler.Query;
 using SpotifyLite.Domain.Album.Repository;
 
 namespace SpotifyLite.Api.Controllers
@@ -8,18 +12,26 @@ namespace SpotifyLite.Api.Controllers
     [ApiController]
     public class AlbumController : ControllerBase
     {
-        public IAlbumRepository AlbumRepository { get; }
+        private readonly IMediator mediator;
 
-        public AlbumController(IAlbumRepository albumRepository)
+        public AlbumController(IMediator mediator)
         {
-            AlbumRepository = albumRepository;
+            this.mediator = mediator;
         }
 
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            return Ok(await this.AlbumRepository.GetAll());
+            return Ok(await this.mediator.Send(new GetAllAlbumQuery()));
         }
+
+        [HttpPost()]
+        public async Task<IActionResult> Criar(AlbumInputDto dto)
+        {
+            var result = await this.mediator.Send(new CreateAlbumCommand(dto));
+            return Created($"{result.Album.Id}", result.Album);
+        }
+
 
     }
 }

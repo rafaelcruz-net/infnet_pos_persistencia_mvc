@@ -13,7 +13,7 @@ namespace SpofityLite.Application.Album.Profile
         public AlbumProfile()
         {
             CreateMap<Musica, MusicaOutputDto>()
-                .ForMember(x => x.Duracao, f => f.MapFrom(m => m.Duracao.Formatado));
+                .ForMember(x => x.Duracao, f => f.MapFrom(m => m.Duracao.ValorFormatado()));
 
             CreateMap<MusicaInputDto, Musica>()
                 .ForPath(x => x.Duracao.Valor, f => f.MapFrom(m => m.Duracao));

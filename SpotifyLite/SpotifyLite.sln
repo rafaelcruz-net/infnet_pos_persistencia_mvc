@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpotifyLite.Api", "SpotifyL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpofityLite.Application", "SpofityLite.Application\SpofityLite.Application.csproj", "{1DAEAF09-543F-4E36-A6C5-C9FDFF6E29E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpotifyLite.Test", "SpotifyLite.Test\SpotifyLite.Test.csproj", "{5D75A493-39DD-4B4B-A613-133C05951A83}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{1DAEAF09-543F-4E36-A6C5-C9FDFF6E29E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DAEAF09-543F-4E36-A6C5-C9FDFF6E29E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DAEAF09-543F-4E36-A6C5-C9FDFF6E29E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D75A493-39DD-4B4B-A613-133C05951A83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D75A493-39DD-4B4B-A613-133C05951A83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D75A493-39DD-4B4B-A613-133C05951A83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D75A493-39DD-4B4B-A613-133C05951A83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

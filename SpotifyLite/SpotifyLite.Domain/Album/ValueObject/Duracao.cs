@@ -22,7 +22,7 @@ namespace SpotifyLite.Domain.Album.ValueObject
 
         public string Formatado => ValorFormatado();
 
-        private string ValorFormatado()
+        public string ValorFormatado()
         {
             var hours = Convert.ToInt32(Math.Floor(Convert.ToDecimal(this.Valor) / 3600));
             var duration = Convert.ToDecimal(hours % 3600);
@@ -35,6 +35,11 @@ namespace SpotifyLite.Domain.Album.ValueObject
 
             return $"{minutos.ToString().PadLeft(2, '0')} Min  {segundos.ToString().PadLeft(2, '0')} Seg";
 
+        }
+
+        public override string ToString()
+        {
+            return ValorFormatado();
         }
     }
 }

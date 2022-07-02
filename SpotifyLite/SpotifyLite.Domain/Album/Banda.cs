@@ -13,7 +13,7 @@ namespace SpotifyLite.Domain.Album
         public string Nome { get; set; }
         public string Foto { get; set; }
         public string Descricao { get; set; }
-        public IList<Album> Albums { get; set; }
+        public virtual IList<Album> Albums { get; set; }
                 
 
         public void CreateAlbum(string nome, IList<Musica> musicas)

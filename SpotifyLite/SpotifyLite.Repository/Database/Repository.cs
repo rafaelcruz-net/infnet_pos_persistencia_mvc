@@ -42,7 +42,6 @@ namespace SpotifyLite.Repository.Database
         public async Task<IEnumerable<T>> FindAllByCriteria(Expression<Func<T, bool>> expression)
         {
             return await this.Query
-                             .AsNoTrackingWithIdentityResolution()
                              .Where(expression)
                              .ToListAsync();
         }
@@ -50,7 +49,6 @@ namespace SpotifyLite.Repository.Database
         public async Task<T> FindOneByCriteria(Expression<Func<T, bool>> expression)
         {
             return await this.Query
-                             .AsNoTrackingWithIdentityResolution()
                              .FirstOrDefaultAsync(expression);
                  
         }
@@ -63,7 +61,6 @@ namespace SpotifyLite.Repository.Database
         public async Task<IEnumerable<T>> GetAll()
         {
             return await this.Query
-                             .AsNoTrackingWithIdentityResolution()
                              .ToListAsync();
         }
 
